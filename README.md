@@ -13,7 +13,7 @@ Cria um usuário. O conteúdo do request deverá ser com código ```201 Crea
 
 Requisição:
 
-```curl -I -X POST -H "Content-Type:application/json" http://<[:host]><[:port]>/:user -d '{"id":"rambo"}'```
+```curl -I -X POST -H "Content-Type:application/json" http://<host>[:<port>]/:user -d '{"id":"rambo"}'```
 
 Resposta:
 
@@ -29,17 +29,19 @@ Cria uma nova tag no sistema. O conteúdo do request deverá ser com código 
 
 Requisição:
 
-```curl -I -X POST -H "Content-Type:application/json" http://<[:host]><[:port]>/:user -d '{"id":"rambo"}'```
+```curl -I -X POST -H "Content-Type:application/json" http://<host>[:<port>]/:user -d '{"id":"rambo"}'```
 
 Resposta:
 
 ```
 {
-    "tagurl": "http://<[:host]><[:port]>/tag/:user/:tagid"
+    "tagurl": "http://<host>[:<port>]/tag/:user/:tagid"
 }
 ```
 
 ### GET /tag/:user/:tag
+
+Registra os dados da requisição, e retorna uma imagem de 1px.
 
 ### GET /stats/:user/:tag
 
