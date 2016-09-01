@@ -1,3 +1,4 @@
+import datetime
 from .db import db
 
 class Stats(db.Model):
