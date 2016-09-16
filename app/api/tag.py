@@ -14,9 +14,9 @@ def item(tag):
     #if ( result is None ) :
     #    return null, 404
 
-    #stats = Stats(tag_id=1, ip='1')
-    #db.session.add(stats)
-    #db.session.commit()
+    stats = Stats(tag_id=1, ip='1')
+    db.session.add(stats)
+    db.session.commit()
 
     response = make_response(base64.b64decode("R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"))
     response.headers['Content-Type'] = 'image/gif'

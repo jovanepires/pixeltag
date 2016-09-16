@@ -2,3 +2,4 @@ bin/*
 pip-selfcheck.json
 include/*
 lib/*
+*.db
