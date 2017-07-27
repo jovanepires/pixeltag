@@ -19,6 +19,7 @@ def create_app(application_mode='config.DevelopmentConfig'):
     with app.app_context():
         # Extensions like Flask-SQLAlchemy now know what the "current" app
         # is while within this block. Therefore, you can now run...
+        db.drop_all()
         db.create_all()
 
     return app
